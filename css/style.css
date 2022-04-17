@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Akshar', sans-serif;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+} */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: rgb(21,68,66);
+  background: radial-gradient(circle, rgba(21,68,66,1) 30%, rgba(0,0,0,1) 100%);
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+/* MENU BURGER */
+
+.nav-menu {
+  position: fixed;
+  right: -100%;
+  top: 4rem;
+  background-color: #154442;
+  width: 80%;
+  height: 100vh;
+  border-radius: 5px;
+  transition: 0.3s;
+  padding: 0 0 0.5rem 1rem;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.nav-menu.active {
+  right: 0;
+}
+
+.navbar {
+  padding: .7rem 1rem;
+}
+
+.nav-item {
+  margin: 0;
+}
+
+.nav-link {
+  font-size: 1.1rem;
+  font-weight: 200;
+  color: #fff;
+}
+
+.nav-logo img{
+  width: 7rem;
+}
+
+.burger {
+  display: block;
+  cursor: pointer;
+}
+
+.burger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.burger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.bar {
+  display: block;
+  width: 20px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+/* BODY */
+
+main {
+  padding: 50px 6%;
+}
+
+.home {
+  display: grid;
+  gap: 20px;
+}
+
+.home h1 {
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.home-text {
+  color: #7C9F9C;
+}
+
+.home-color {
+  color: #4AD2B7;
+  text-shadow : -.05em -.05em #154442,
+                -2px -2px 0 #fff;
+
+}
+
+.fa-moon,
+.fa-discord {
+  color: #4AD2B7;
+}
+
+.home-buttons button {
+  border: none;
+  border-radius: 50px;
+  margin-right: 5%;
+  padding: 10px 3px;
+  width: 120px;
+}
+
+.first-button {
+  background-color: #4AD2B7;
+  color: #053C35;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.second-button  {
+  font-weight: bolder;
+  color: #4AD2B7;
+  text-transform: capitalize;
+  background: transparent;
+}
+
+.home-buttons .second-button {
+  border: 1px solid #4AD2B7;
+}
+
+.home-illustration img {
+  animation: rotation 10s infinite linear;
+  width: 10%;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.social-media h2 {
+  color: #fff;
+  font-size: .9rem;
+  padding: 20px 0 5px 0;
+}
+
+.social-banner {
+  background-color: #0C272A;
+  border-radius: 10px;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  padding: 4%;
+  width: 80%;
+}
+
+.social-banner a {
+  color: #fff;
+  font-size: 18px;
+  line-height: 0;
+}
