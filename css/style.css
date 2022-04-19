@@ -15,12 +15,6 @@ a {
   text-decoration: none;
 }
 
-/* img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-} */
-
 html {
   scroll-behavior: smooth;
 }
@@ -30,6 +24,7 @@ body {
   background: radial-gradient(circle, rgba(21,68,66,1) 30%, rgba(0,0,0,1) 100%);
   background-repeat: no-repeat;
   height: 100vh;
+  overflow: hidden;
 }
 
 /* MENU BURGER */
@@ -264,6 +259,7 @@ main {
 
 .home-illustration img {
   animation: rotation 35s infinite linear;
+  filter: brightness(40%);
   margin-left: 100px;
   overflow-x: hidden;
   position: absolute;
