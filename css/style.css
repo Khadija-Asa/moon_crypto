@@ -37,7 +37,7 @@ body {
   cursor: pointer;
   display: flex;
   flex-direction: column;
-  height: 45vh;
+  height: 50vh;
   justify-content: center;
   line-height: 40px;
   position: fixed;
@@ -179,7 +179,7 @@ main {
 .social-media h2 {
   color: #fff;
   font-size: .9rem;
-  padding: 20px 0 5px 0;
+  padding: 40px 0 5px 0;
 }
 
 .social-banner {
@@ -196,6 +196,11 @@ main {
   color: #fff;
   font-size: 18px;
   line-height: 0;
+}
+
+.social-banner a:hover {
+  color: #4AD2B7;
+  transform: skew(10deg);
 }
 
 /* MEDIA QUERIES */
@@ -229,7 +234,7 @@ main {
     width: 24rem;
   }
   .social-media h2 {
-    padding: 35px 0 10px 0;
+    padding: 40px 0 10px 0;
   }
   .social-banner {
     padding: 10px;
@@ -257,14 +262,16 @@ main {
 
 /* MOON */
 
-.home-illustration img {
-  animation: rotation 35s infinite linear;
-  filter: brightness(40%);
-  margin-left: 100px;
-  overflow-x: hidden;
+.home-illustration {
+  /* animation: rotation 20s infinite linear; */
+  background: url(/assets/moon.png);
+  background-repeat: no-repeat;
+  filter: brightness(70%);
+  height: 100vh;
   position: absolute;
-  top: 100px;
-  width: 500px;
+  right: 0;
+  top: 180px;
+  width: 80%;
   z-index: -1;
 }
 
@@ -278,13 +285,12 @@ main {
 }  
 
 @media screen and (min-width: 768px) {
-  .home-illustration img {
+  .home-illustration {
     align-items:flex-end;
     animation: rotation 35s infinite linear;
     display: flex;
     justify-content: end;
     margin-left: 25rem;
-    overflow-x:  hidden;
     width: auto;
   }
   
