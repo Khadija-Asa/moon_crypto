@@ -264,7 +264,7 @@ main {
 
 .home-illustration {
   /* animation: rotation 20s infinite linear; */
-  background: url(/assets/moon.png);
+  background: url(../assets/moon.png);
   background-repeat: no-repeat;
   filter: brightness(70%);
   height: 100vh;
