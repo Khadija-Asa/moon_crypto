@@ -123,6 +123,7 @@ main {
 .home {
   display: grid;
   gap: 20px;
+  margin-top: 50px;
 }
 
 .home h1 {
@@ -271,28 +272,70 @@ main {
   position: absolute;
   right: 0;
   top: 180px;
-  width: 80%;
+  width: 300px;
   z-index: -1;
 }
 
-@keyframes rotation {
+/* @keyframes rotation {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-}  
+}   */
 
-@media screen and (min-width: 768px) {
-  .home-illustration {
-    align-items:flex-end;
-    animation: rotation 35s infinite linear;
-    display: flex;
-    justify-content: end;
-    margin-left: 25rem;
-    width: auto;
+@media screen and (min-width: 1024px) {
+  .home {
+    margin-top: 100px;
   }
-  
+  .home-illustration {
+    background-size: 800px;
+    height: 100vh;
+    padding-right: 550px;
+  }
 }
 
+@media screen and (min-width: 1440px) {
+  .home h1 {
+    font-size: 4rem;
+  }
+  .home-text {
+    font-size: 1.2rem;
+  }
+  .home-illustration {
+    background-size: 950px;
+    height: 100vh;
+    padding-right: 650px;
+  }
+  .social-banner {
+    width: 20%;
+  }
+  .home-buttons button {
+    font-size: 1.2rem;
+    margin-right: 30px;
+    padding: 12px;
+    width: 170px;
+  }
+}
+
+@media screen and (min-width: 1880px) {
+  .home h1 {
+    font-size: 4.5rem;
+  }
+  .home-text {
+    font-size: 1.5rem;
+    width: 40%;
+  }
+  .home-illustration {
+    background-size: 1000px;
+    height: 100vh;
+    padding-right: 800px;
+  }
+  .home-buttons button {
+    font-size: 1.2rem;
+    margin-right: 30px;
+    padding: 12px;
+    width: 170px;
+  }
+}
